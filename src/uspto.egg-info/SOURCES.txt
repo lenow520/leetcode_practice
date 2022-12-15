@@ -1,0 +1,7 @@
+setup.py
+src/script/__init__.py
+src/uspto.egg-info/PKG-INFO
+src/uspto.egg-info/SOURCES.txt
+src/uspto.egg-info/dependency_links.txt
+src/uspto.egg-info/not-zip-safe
+src/uspto.egg-info/top_level.txt
