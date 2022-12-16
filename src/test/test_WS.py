@@ -1,4 +1,5 @@
 from unittest import TestCase
+# from script.wordsplit.solution import WordSplit
 from script.wordsplit.solution2 import WordSplit
 
 class testWS(TestCase):

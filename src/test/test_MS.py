@@ -25,3 +25,9 @@ class testMA(TestCase):
         divisor = 5
 
         self.assertEqual(3, MaxAligned(input, divisor))
+    
+    def test_case5(self):
+        input = [7, 2, 12, 0, 8, 177, 152]
+        divisor = 5
+
+        self.assertEqual(5, MaxAligned(input, divisor))
