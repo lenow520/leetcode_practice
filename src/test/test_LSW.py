@@ -13,3 +13,9 @@ class testMSW(TestCase):
         num = 5
 
         self.assertEqual(76, MaxSumWeight(num, input))
+
+    def test_case3(self):
+        input = [(2,3,70),(2,1,10)]
+        num = 3
+
+        self.assertEqual(150, MaxSumWeight(num, input))
