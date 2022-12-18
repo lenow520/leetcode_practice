@@ -20,14 +20,16 @@ def LIS(seq):
     for i in range(1, n):
         if magic[-1] < seq[i]:
             magic.append(seq[i])
-        elif magic[0] > seq[i]:
-            magic[0] = seq[i]
+        #elif magic[0] > seq[i]:
+        #    magic[0] = seq[i]
         else:
             target = seq[i]
             index = binarysearch(target, magic)
-            left = magic[:index]
-            magic = left+[target]
-    
+            print(target,index)
+            magic[index] = target
+            #left = magic[:index]
+            #magic = left+[target]
+    print(magic)
     max_value = len(magic)       
     return max_value
 
@@ -41,5 +43,9 @@ ans = LIS(inputseq)
 print(ans)
 
 inputseq =   [1,1,1,2]
+ans = LIS(inputseq)
+print(ans)
+
+inputseq =   [2,1,2,4,5,3,8,2,4,-3]
 ans = LIS(inputseq)
 print(ans)
